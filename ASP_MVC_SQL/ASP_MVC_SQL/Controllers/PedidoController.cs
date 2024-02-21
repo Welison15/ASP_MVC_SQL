@@ -13,5 +13,11 @@ namespace ASP_MVC_SQL.Controllers
         {
             return View();
         }
-    }
+
+
+		public ActionResult Listar()
+		{
+			return View();
+		}
+	}
 }
