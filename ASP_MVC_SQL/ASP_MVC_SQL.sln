@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_MVC_SQL", "ASP_MVC_SQL\ASP_MVC_SQL.csproj", "{68A5E147-5015-4136-BC84-0673A789CCF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_MVC_SQL.CORE", "ASP_MVC_SQL.CORE\ASP_MVC_SQL.CORE.csproj", "{3EEC039D-316C-4810-A8CD-9F363E63BBCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{68A5E147-5015-4136-BC84-0673A789CCF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A5E147-5015-4136-BC84-0673A789CCF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A5E147-5015-4136-BC84-0673A789CCF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEC039D-316C-4810-A8CD-9F363E63BBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEC039D-316C-4810-A8CD-9F363E63BBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEC039D-316C-4810-A8CD-9F363E63BBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEC039D-316C-4810-A8CD-9F363E63BBCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
