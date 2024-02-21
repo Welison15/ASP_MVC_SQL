@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace ASP_MVC_SQL.CORE.DB
 {
@@ -39,9 +40,9 @@ namespace ASP_MVC_SQL.CORE.DB
 					idRetorno = Convert.ToInt32(command.ExecuteScalar());
 				}
 			}
-			catch (Exception ex)
+			catch
 			{
-				new LogNG().Inserir(ex.ToString());
+				//new LogNG().Inserir(ex.ToString());
 			}
 
 			return idRetorno;
@@ -70,9 +71,9 @@ namespace ASP_MVC_SQL.CORE.DB
 					adapter.Fill(dataTable);
 				}
 			}
-			catch (Exception ex)
+			catch
 			{
-				new LogNG().Inserir(ex.ToString());
+				//new LogNG().Inserir(ex.ToString());
 			}
 
 			return dataTable;
@@ -105,9 +106,9 @@ namespace ASP_MVC_SQL.CORE.DB
 					}
 				}
 			}
-			catch (Exception ex)
+			catch
 			{
-				new LogNG().Inserir(ex.ToString());
+				//new LogNG().Inserir(ex.ToString());
 			}
 
 			return dataRow;
@@ -135,9 +136,9 @@ namespace ASP_MVC_SQL.CORE.DB
 				}
 				return true;
 			}
-			catch (Exception ex)
+			catch
 			{
-				new LogNG().Inserir(ex.ToString());
+				//new LogNG().Inserir(ex.ToString());
 				return false;
 			}
 		}
@@ -162,9 +163,9 @@ namespace ASP_MVC_SQL.CORE.DB
 				}
 				return true;
 			}
-			catch (Exception ex)
+			catch
 			{
-				new LogNG().Inserir(ex.ToString());
+				//new LogNG().Inserir(ex.ToString());
 				return false;
 			}
 		}
