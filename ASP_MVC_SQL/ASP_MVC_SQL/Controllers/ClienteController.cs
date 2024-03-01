@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ASP_MVC_SQL.Models;
 
 namespace ASP_MVC_SQL.Controllers
 {
@@ -11,7 +13,17 @@ namespace ASP_MVC_SQL.Controllers
         // GET: Cliente
         public ActionResult Index()
         {
-            return View();
+            var cliente = new List<ClienteModel>();
+            cliente.Add(new ClienteModel()
+            {
+                Id = 1,
+                Nome = "Welison",
+            }) ;
+            
+        
+            
+
+            return View(cliente);
         }
     }
 }
