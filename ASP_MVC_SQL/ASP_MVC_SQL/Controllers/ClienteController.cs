@@ -13,17 +13,24 @@ namespace ASP_MVC_SQL.Controllers
         // GET: Cliente
         public ActionResult Index()
         {
-            var cliente = new List<ClienteModel>();
-            cliente.Add(new ClienteModel()
+            var clienteColecao = new List<ClienteModel>();
+
+            foreach (var cliente in clienteColecao)
             {
-                Id = 1,
-                Nome = "Welison",
-            }) ;
-            
+                cliente.Add(new ClienteModel()
+                {
+                    Id = cliente.Id,
+                    Nome = cliente.Nome,
+                    
+                    
+                });
+            }
+                       
+           
         
             
 
-            return View(cliente);
+            return View(clienteColecao);
         }
     }
 }

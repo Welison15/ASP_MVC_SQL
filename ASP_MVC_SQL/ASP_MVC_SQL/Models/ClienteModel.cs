@@ -8,6 +8,11 @@ namespace ASP_MVC_SQL.Models
     public class ClienteModel
     {
         public int Id { get; set; }
-        public String Nome { get; set;}    
+        public String Nome { get; set;}
+
+        internal void Add(ClienteModel clienteModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
