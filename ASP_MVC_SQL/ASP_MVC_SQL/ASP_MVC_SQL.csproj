@@ -215,6 +215,12 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASP_MVC_SQL.CORE\ASP_MVC_SQL.CORE.csproj">
+      <Project>{3eec039d-316c-4810-a8cd-9f363e63bbca}</Project>
+      <Name>ASP_MVC_SQL.CORE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

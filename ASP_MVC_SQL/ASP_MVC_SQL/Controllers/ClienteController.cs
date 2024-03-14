@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ASP_MVC_SQL.CORE.NG;
 using ASP_MVC_SQL.Models;
 
 namespace ASP_MVC_SQL.Controllers
@@ -13,24 +14,30 @@ namespace ASP_MVC_SQL.Controllers
         // GET: Cliente
         public ActionResult Index()
         {
-            var clienteColecao = new List<ClienteModel>();
+            //lista de cliente 
+            //lista de cliente que venha  DB
+            //Camada de apresentção não vai , direto do DB
+            //Listar os cliente de camada de Negocio
 
-            foreach (var cliente in clienteColecao)
+            var clienteNG = new ClienteNG();
+            var clienteColecao = clienteNG.Listar();
+
+            var clienteModelColecao = new List<ClienteModel>();
+            foreach (var item in clienteColecao)
             {
-                cliente.Add(new ClienteModel()
+                clienteModelColecao.Add(new ClienteModel()
                 {
-                    Id = cliente.Id,
-                    Nome = cliente.Nome,
-                    
-                    
+                    Id = item.Id,
+                    Nome = item.Nome,
                 });
             }
-                       
-           
-        
-            
 
-            return View(clienteColecao);
+
+
+
+
+
+            return View(clienteModelColecao);
         }
     }
 }
