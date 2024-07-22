@@ -32,12 +32,14 @@ namespace ASP_MVC_SQL.Controllers
                 });
             }
 
-
-
-
-
-
             return View(clienteModelColecao);
         }
+
+        public ActionResult Detalhe()
+        {
+            return View();
+        }
+
+        
     }
 }
